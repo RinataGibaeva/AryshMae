@@ -1,0 +1,61 @@
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>«Арыш Мае»</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css"> 
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/jquery.modal.min.js"></script>
+        <script src="js/jquery.cookie.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo2.png"></a>
+                    </div>
+                    <div class="razdel">
+                        <ul> 
+                            <li><a href="index2.html">Адреса магазинов</a></li>
+                            <li><a href="index3.html">Информация для поставщиков</a></li>
+                        </ul>
+                    </div> 
+                     <div class="logo2">
+                        <a href=""><img src="img/kontakt.png"></a>
+                    </div>     
+            </div>
+            <div id="opn-win" style="display: none;">
+                <form>
+                    <input type="email" placeholder="Ваш электронный адрес...">
+                    <input type="submit" value="Получить акции">
+                </form>
+            </div>
+            <div class="content">   
+                <div class="history">
+                    <h1>Сеть магазинов «Арыш Мае»</h1>
+                    <br><h2>с 1997 года на рынке качества</h2>
+                </div>
+            </div>
+        </div>
+       <!-- «Сайтофициально.рф/обратный-звонок-бесплатно.html» {literal} --> <script type='text/javascript'> (function(){ var widget_id = '6309070470'; var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://сайтофициально.рф/script/js/callback/'+widget_id+'/callback_st_of.js'; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script> <!-- {/literal} «Сайтофициально.рф/обратный-звонок-бесплатно.html» -->
+        <script type="text/javascript">
+                $(window).load(function() {
+                var hideTheModal = $.cookie('hideTheModal');
+                // если cookie не установлено...
+                if(hideTheModal == null){
+                // задержка 7 секунд
+                setTimeout(function(){
+                // вызвать модальное окно
+                $('#opn-win').modal();
+                }, 7000);
+                // когда кнопка "Закрыть" нажата
+                $('.close-modal').click(function(){
+                // добавить cookie
+                $.cookie('hideTheModal', 'true', { expires: 30 });
+                       });
+                    }
+                });
+        </script>
+    </body>
+</html>

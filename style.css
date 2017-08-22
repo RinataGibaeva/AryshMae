@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&subset=cyrillic');
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+	/* Включаем режим Flexbox. */
+	display: flex; 
+	
+	/* Распределяем элементы внутри шапки */
+	justify-content: space-between;
+
+	/* Выравниваем элементы вертикально по центру. */
+	align-items: center;
+}
+
+@media (max-width: 1000px){
+.header{
+    /* Меняем оси шапки, делая её вертикальной. */
+    flex-direction: column;
+  
+    /* Выравнивание элементов шапки с начала (по левому краю). */
+    align-items: flex-start;
+  }
+}
+
+
+.razdel ul li{
+    display: inline;
+    padding: 0px 20px;
+    border-right: 1px solid #bd1414;
+}
+
+.razdel ul li:last-child {
+    border-right: none;
+}
+
+.razdel ul a{
+    color: #6f140a;
+    font-family:'Poiret One', sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 590;
+}
+
+.history h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    color: #6f140a;
+    text-align:  center;
+    padding-top: 190px;
+    margin-bottom: 0px;
+}
+
+.history h2 {
+    font-family: 'Poiret One', cursive;
+    font-size: 30px;
+    color: #6f140a;
+    text-align:  center;
+    margin-top: 0px;
+}
+
+.zagolovok2 h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    color: #6f140a;
+    text-align:  center;
+    padding-top: 4%;
+}
+
+.zagolovok3 h1 {
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    color: #6f140a;
+    text-align:  center;
+    padding-top: 4%;
+}
+
+.razdel a {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+
+ 
+.razdel a:hover {
+    font-size: 25px;
+}
+
+.container {
+    align-content: center;
+    width:1100px; 
+    margin: 0 auto;}
+
+.adres ul li {
+    list-style-type: none;
+    text-align:  left;
+    font-family: 'Poiret One', cursive;
+}
+
+.adres h2 {
+    color: #6f140a;
+}
+
+.adres a {
+    text-decoration: none;
+}
+
+.adres a h2 {
+    font-size: 14px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    width: 400px;
+}
+ 
+.adres a h2:hover {
+    font-size: 25px;
+}
+
+.adres {
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+   }
+
+.razdel a {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+
+ 
+.razdel a:hover {
+    font-size: 25px;
+}
+
+.title {
+    background: #bd1414;
+    width: 260px;
+    height: 25px;
+    opacity:0.9;
+    margin-left: 35%;
+    margin-right: 30%;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.title h3 {
+    color: #fff;
+    text-align: center;
+    text-align-last: center;
+    font-family: 'Poiret One', cursive;
+}
+
+.contragent a{
+    text-decoration: none;
+}
+
+.title a{
+    text-decoration: none;
+}
+
+.contragent p {
+    margin-bottom: -15px;
+    width: 800px;
+    padding-left: 10%;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+}
+
+.contragent p strong {
+    margin-bottom: -15px;
+    width: 800px;
+    font-family: 'Poiret One', cursive;
+    color: brown;
+}
+
+.container {
+    width:1000px;  
+    padding-bottom: 10%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.modal {
+  display: none;
+  width: 400px;
+  height: 20px;
+  background: #bd1414;
+  padding: 15px 30px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #bd1414;
+  -moz-box-shadow: 0 0 10px #bd1414;
+  -o-box-shadow: 0 0 10px #bd1414;
+  -ms-box-shadow: 0 0 10px #bd1414;
+  box-shadow: 0 0 10px #bd1414;
+    
+}
+
+.modal a.close-modal {
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  background: url(img/close.png) no-repeat 0 0;
+    font-family: 'Poiret One', cursive;
+}
+
+.modal-spinner {
+  display: none;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -32px;
+  margin-top: -32px;
+  background: url(img/spinner.gif) #111 no-repeat center center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+    font-family: 'Poiret One', cursive;
+}
+
+.input value {
+    font-family: 'Poiret One', cursive;
+    
+}
